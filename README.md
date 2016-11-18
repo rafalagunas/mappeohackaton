@@ -1,1 +1,1 @@
-# mappeohackaton
+Pokemappa prototype
