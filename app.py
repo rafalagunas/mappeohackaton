@@ -1,23 +1,8 @@
-from flask import Flask, render_template
-from flask import Flask
-from flask import Flask, render_template, request
-from flask import Flask, render_template, json, request
+from kivy.app import App
+from kivy.uix.button import Button
 
-app = Flask(__name__)
+class TestApp(App):
+    def build(self):
+        return Button(text='Hello World')
 
-
-
-@app.route('/')
-def index():
-    return render_template('index.html')
-
-
-
-
-
-
-
-
-if __name__ == "__main__":
-    app.run()
-
+TestApp().run()
